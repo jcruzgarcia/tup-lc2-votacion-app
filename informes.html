@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/informes.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dcacde4dce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,32 +20,82 @@
         </div>
         <!--Barra de menú principal-->
         <ul>
-            <li>Año<select name="year" id=""></select></li>
-            <li>Cargo<select name="charge" id=""></select></li>
-            <li>Distrito<select name="district" id=""></select></li>
-            <li>Filtrar
-                <div><img src="/img/" alt=""></div>
-            </li>
-            <li><a class="active" href="informes.html">Informes</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a class="active" href="paso.html">PASO</a></li>
+            <li><a class="active" href="generales.html">GENERALES</a></li>
+            <li><a href="index.html">Inicio</a></li>
         </ul>
     </header>
     <!-- Contenido principal de la página -->
     <main>
         <section id="sec-titulo">
             <!--Seccion para agregar una palicula favorita por codigo-->
-            <h2>Informes</h2>
-            <p>Párrafo o subtítulo</p>
-            <div>Imagen</div>
+            <h2>Reporte de elecciones</h2>
         </section>
         <section id="sec-contenido">
             <!--Seccion para contenido de la página-->
+            <div class="grilla">
+                <!-- Fila 1: Encabezados de columna -->
+                <div class="fila encabezados">
+                    <div class="columna">PROVINCIA</div>
+                    <div class="columna">ELECCIÓN</div>
+                    <div class="columna">DATOS GENERALES</div>
+                    <div class="columna">DATOS POR AGRUPACIÓN</div>
+                </div>
+                
+                <!-- Fila 2: Datos -->
+                <div class="fila datos">
+                    <div class="columna">
+                        <!-- Imagen de la provincia -->
+                        <svg height="210" width="800"><path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M171 55L163 53L150 45L147 50L143 49L133 60L114 60L114 151L116 151L120 155L122 156L126 153L128 149L124 145L126 143L126 138L128 138L129 133L126 129L126 122L134 126L139 126L169 119L179 114L189 97L190 89L189 87L186 87L182 82L185 75L181 69L171 63L170 64L170 58z"></path></svg>
+                    </div>
+                    <div class="columna">
+                        <!-- Título de la elección -->
+                        <h2>Generales</h2>
+                        <!-- Datos seleccionados -->
+                        <p>Año: 2023</p>
+                        <p>Tipo: General</p>
+                        <p>Provincia: Buenos Aires</p>
+                        <p>Cargo: Presidente</p>
+                    </div>
+                    <div class="columna">
+                        <!-- Datos Generales -->
+                        <div>Mesas Computadas: 500</div>
+                        <div>Electores: 10000</div>
+                        <div>Participación sobre Escrutado: 80%</div>
+                    </div>
+                    <div class="columna">
+                        <!-- Datos por Agrupación -->
+                        <ul>
+                            <li>Agrupación 1: 40% (500 votos)</li>
+                            <li>Agrupación 2: 30% (300 votos)</li>
+                            <li>Agrupación 3: 20% (200 votos)</li>
+                            <li>Agrupación 4: 10% (100 votos)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!--Pie de página-->
     <footer>
+        <div class="logos" style="background-color: black;">
+            <img src="/img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="">
+            <img src="/img/icons/logos_001-10.4430c8d5.png" alt="">
+            <img src="/img/icons/Logo_DINE_negativo.a88f983e.png" alt="">
+        </div>
+        <div class="footer-text" style="background-color: black;">
+            <p>
+                Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
+                porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art.
+                45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
+                residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los Términos y
+                Condiciones.
+            </p>
+        </div>
         <p>Desarrollado con ♥ - LC2</p>
     </footer>
+    
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
