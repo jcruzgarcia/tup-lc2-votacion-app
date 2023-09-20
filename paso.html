@@ -36,12 +36,13 @@
     <main>
         <section id="sec-titulo">
             <!--Seccion para agregar una palicula favorita por codigo-->
-            <h2>PASO</h2>
-            <div>Imagen</div>
+            <h2>Elecciones 2021 | PASO</h2>
+            <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
+                Aires</p>
         </section>
         <section id="sec-contenido">
             <div>
-                <button>Agregar a Informe</button>
+                <button class="agregar-button">+ Agregar a Informe</button>
             </div>
             <div style="background-color: blue;" id="mesas_escrutadas_div">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -374,6 +375,20 @@ C184.178,409.323,186.501,406.999,189.368,406.999z"></path>
                     </div>
 
                 </div>
+        </section>
+        <section id="sec-messages">
+            <div class="success-button">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <p>Se agregó con éxito el resultado al informe</p>
+            </div>
+            <div class="error-button">
+                <i class="fa-solid fa-exclamation-triangle"></i>
+                <p>Error: Se produjo un error al intentar agregar resultados al infome</p>
+            </div>
+            <div class="info-button">
+                <i class="fa-solid fa-exclamation"></i>
+                <p>La operacion no se pudo completar</p>
+            </div>
         </section>
     </main>
     <!--Pie de página-->
