@@ -43,6 +43,11 @@ ul {
     list-style: none;
 }
 
+
+.content_sec-titulo {
+    display: flex;
+}
+
 .paso-button{
     background-color: var(--magenta);
     border-radius: 5px;
@@ -91,7 +96,7 @@ ul {
 main img{
     width: 350px;
     height: auto;
-    margin: 15px 15px 15px 15px;
+    margin: 15px;
 }
 
 .big-paso-button {
