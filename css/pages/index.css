@@ -41,22 +41,19 @@
 ul {
     display: flex;
     list-style: none;
-}
-
-
-.content_sec-titulo {
-    display: flex;
+    
 }
 
 .paso-button{
     background-color: var(--magenta);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     color: #fff;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    margin-right: 13px;
 }
 
 .paso-button:hover{
@@ -66,12 +63,13 @@ ul {
 .generales-button{
     background-color: var(--celeste);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     color: #fff;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    margin-right: 13px;
 }
 
 .generales-button:hover{
@@ -81,16 +79,21 @@ ul {
 .informes-button{
     border-radius: 15px;
     border: solid 1px white;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     color: #fff;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    margin-right: 13px;
 }
 
 .informes-button:hover{
     background-color: var(--gris-claro);
+}
+
+.content_sec-titulo {
+    display: flex;
 }
 
 main img{
@@ -99,7 +102,13 @@ main img{
     margin: 15px;
 }
 
+main p {
+    margin: 15px;
+}
+
 .big-paso-button {
+    display: flex;
+    align-items: center;
     background-color: var(--magenta);
     border-radius: 10px;
     margin: 25px;
@@ -111,6 +120,8 @@ main img{
 }
 
 .big-generales-button {
+    display: flex;
+    align-items: center;
     background-color: var(--celeste);
     border-radius: 10px;
     margin: 25px;
@@ -119,4 +130,13 @@ main img{
     padding: 1rem;
     color: #fff;
     font-size: 28px;
+}
+
+.big-buttons a{
+    text-decoration: none;
+}
+
+.big-buttons{
+    display: flex;
+    justify-content: center;
 }

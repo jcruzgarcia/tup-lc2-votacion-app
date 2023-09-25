@@ -82,21 +82,27 @@ h3 {
   margin: auto 0 auto auto;
 }
 .header-page img {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .menu-bar {
   background-color: var(--fondo-Menu);
-  display: flex;
-  padding-bottom: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
   align-items: center;
 }
 
 .menu-bar ul {
   margin-right: 13px;
   margin-left: 13px;
+}
 
+.menu-bar .texto-consultar{
+  font-size: 11px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 4px;
 }
 
 .logo {
@@ -104,12 +110,24 @@ h3 {
 }
 
 footer {
+  display: flex;
   background-color: var(--fondo-Footer);
+  padding-top: 20px;
+  padding-bottom: 20px;
 
 }
 footer p{
   color: var(--texto-footer);
+  align-items: flex-end;
+  margin: 20px;
+  line-height: 25px;
 }
 footer img{
-  width: 170px;
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+}
+
+footer .logos{
+  display: flex;
 }

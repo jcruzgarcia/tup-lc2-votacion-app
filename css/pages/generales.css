@@ -41,6 +41,7 @@
 ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .filtrar-button {
@@ -55,14 +56,48 @@ ul {
 
 }
 
-.inicio-button {
-    background-color: var(--gris-claro);
+.paso-button{
+    background-color: var(--magenta);
     border-radius: 5px;
-    padding: 5px;
-    font: #fff;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.paso-button:hover{
+    background-color: var(--gris-claro);
+}
+
+.informes-button{
+    border-radius: 15px;
+    border: solid 1px white;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+.informes-button:hover{
+    background-color: var(--gris-claro);
+}
+
+.inicio-button {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
 }
 
 .inicio-button:hover {
@@ -136,6 +171,11 @@ ul {
     color: var(--celeste);
 }
 
+#sec-contenido {
+    display: flex;
+    align-items: center;
+}
+
 .agregar-button {
     background-color: var(--gris-claro);
     color: white;
@@ -151,6 +191,7 @@ ul {
 }
 
 #mesas_escrutadas_div {
+    display: flex;
     background-color: var(--celeste);
     border-radius: 10px;
     margin: 15px;
@@ -159,9 +200,12 @@ ul {
     padding: 0.5rem 1rem;
     color: #FFF;
     font-size: 12px;
+    justify-content: left;
+    align-items: center;
 }
 
 #electores_div {
+    display: flex;
     background-color: var(--magenta);
     border-radius: 10px;
     margin: 15px;
@@ -170,9 +214,12 @@ ul {
     padding: 0.5rem 1rem;
     color: #FFF;
     font-size: 12px;
+    justify-content: left;
+    align-items: center;
 }
 
 #participacion_div {
+    display: flex;
     background-color: var(--morado);
     border-radius: 10px;
     margin: 15px;
@@ -181,6 +228,19 @@ ul {
     padding: 0.5rem 1rem;
     color: #FFF;
     font-size: 12px;
+    justify-content: left;
+    align-items: center;
+}
+
+strong{
+    font-size: 14px;
+    margin-top: 40px;
+    color: white; 
+}
+
+#cuadro_detalle{
+    display: flex;
+    justify-content: center;
 }
 
 .card1, .card2, .card3{
@@ -198,7 +258,11 @@ ul {
 
 .card1 {
     overflow: scroll;
-    height: 325px;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card1 p{
@@ -208,11 +272,19 @@ ul {
     text-transform: uppercase;
 }
 
+.card1 div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .progress {
-    height: 35px;
+    height: 20px;
     width: 100%;
     border-radius: 5px;
     margin-bottom: 15px;
+    position: relative;
+    margin: 5px 0;
+    background-color: #ccc;
     }
 .progress-bar {
     height: 100%;
@@ -220,6 +292,13 @@ ul {
     align-items: center;
     transition: width 0.25s;
     border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--grafica-amarillo); /* Color de la barra de progreso */
+    color: white;
+    justify-content: center;
 }
 .progress-bar-text {
     margin-left: 10px;

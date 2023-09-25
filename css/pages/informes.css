@@ -43,40 +43,51 @@ ul {
     list-style: none;
 }
 
-.filtrar-button {
-    background-color: white;
-    border-radius: 15px;
-    padding: 5px;
-    font: #fff;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--textos);
-
-}
-
 .inicio-button {
     background-color: var(--gris-claro);
     border-radius: 5px;
     padding: 5px;
-    font: #fff;
+    color: #fff;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
 }
 
 .inicio-button:hover {
     color: var(--textos);
 }
 
-.selects {
-    background: transparent;
-    border: none;
-    font-size: 14px;
-    height: 30px;
-    padding: 5px;
-    color: var(--celeste);
-    font-weight: bold;
+.paso-button{
+    background-color: var(--magenta);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+.paso-button:hover{
+    background-color: var(--gris-claro);
+}
+
+.generales-button{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+.generales-button:hover{
+    background-color: var(--gris-claro);
 }
 
 .success-button {
@@ -162,6 +173,12 @@ tbody td {
     text-align: center;
 }
 
+.lista_datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .texto-elecciones-chico {
     font-size: 12px;
     color: var(--textos);
@@ -174,6 +191,9 @@ tbody td {
 }
 
 .mesas_escrutadas {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: var(--celeste);
     border-radius: 5px;
     margin: 2px;
@@ -184,6 +204,9 @@ tbody td {
 }
 
 .electores {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: var(--magenta);
     border-radius: 5px;
     margin: 2px;
@@ -194,6 +217,9 @@ tbody td {
 }
 
 .participacion {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: var(--morado);
     border-radius: 5px;
     margin: 2px;
@@ -204,10 +230,13 @@ tbody td {
 }
 
 .grilla_datos{
+    display: flex;
+    justify-content: center;
     width: 100px;
     height: 100px;
     overflow-y: scroll;
     padding: 5px;
     font-size: 10px;
     color: var(--textos);
+    text-align: center;
 }
