@@ -87,8 +87,9 @@ h3 {
 
 .menu-bar {
   background-color: var(--fondo-Menu);
-  padding-top: 20px;
   display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
   align-items: center;
 }
 
