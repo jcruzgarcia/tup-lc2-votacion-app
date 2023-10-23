@@ -98,10 +98,16 @@ ul {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    display: flex;
+    justify-content: end;
 }
 
 .inicio-button:hover {
     color: var(--textos);
+}
+
+.div-button {
+    margin-right: 20px;
 }
 
 .selects {
@@ -240,13 +246,16 @@ strong{
 
 #cuadro_detalle{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-}
+    gap: 30px;
+   }
 
 .card1, .card2, .card3{
     border-radius: 25px;
     border: 1px var(--borde-Grilla) solid;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    min-width: 350px;
 }
 
 .card1 h3, .card2 h3, .card3 h3{
@@ -257,12 +266,15 @@ strong{
 }
 
 .card1 {
-    overflow: scroll;
-    overflow-x: hidden;
-    padding: 20px;
     background-color: #f4f4f4;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-div {
+    padding: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .card1 p{
@@ -270,11 +282,6 @@ strong{
     color: var(--textos);
     padding: 5px;
     text-transform: uppercase;
-}
-
-.card1 div {
-    display: flex;
-    justify-content: space-between;
 }
 
 .progress {

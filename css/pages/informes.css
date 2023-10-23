@@ -150,7 +150,7 @@ ul {
     background-color: rgb(250, 250, 250);
 }
 
-thead {
+.encabezados {
     text-align: center;
     color: var(--titulo-Grilla);
     padding: 10px 20px;

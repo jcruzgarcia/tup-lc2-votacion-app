@@ -20,41 +20,52 @@
         <!--Barra de menú principal-->
         <div class="menu-bar">
             <ul>
-                <li class="selects">
-                    Año
-                    <select name="year" id="">
-                        <option>Seleccionar</option>
+                <li>
+                    <select class="selects" name="year" id="">
+                        <option selected disabled value="0" >Año</option>
                         <option>2021</option>
                         <option>2023</option>
                     </select>
                 </li>
-                <li class="selects">
-                    Cargo
-                    <select name="charge" id="">
-                        <option>Seleccionar</option>
+                <li>
+                    <select class="selects" name="charge" id="">
+                        <option selected disabled value="0">Cargo</option>
                         <option>Presidente</option>
                         <option>Diputados</option>
                     </select>
                 </li>
-                <li class="selects">
-                    Distrito
-                    <select name="district" id="">
-                        <option>Seleccionar</option>
+                <li>
+                    <select class="selects" name="district" id="">
+                        <option selected disabled value="0">Distrito</option>
                         <option>Centro</option>
                         <option>Norte</option>
                     </select>
                 </li>
-                <li class="filtrar-button">Filtrar
-                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <li>
+                    <div class="filtrar-button">Filtrar <i class="fa-solid fa-magnifying-glass"></i></div>
                 </li>
                 <li><a class="paso-button" href="paso.html">PASO</a></li>
                 <li><a class="informes-button" href="informes.html">Informes</a></li>
-                <li><a class="inicio-button" href="index.html">Inicio</a></li>
             </ul>
+            <div class="div-button"><a class="inicio-button" href="index.html">Inicio</a></div>
         </div>
     </header>
     <!-- Contenido principal de la página -->
     <main>
+        <section id="sec-messages">
+            <div class="success-button">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <p>Se agregó con éxito el resultado al informe</p>
+            </div>
+            <div class="error-button">
+                <i class="fa-solid fa-exclamation-triangle"></i>
+                <p>Error: Se produjo un error al intentar agregar resultados al infome</p>
+            </div>
+            <div class="info-button">
+                <i class="fa-solid fa-exclamation"></i>
+                <p>La operacion no se pudo completar</p>
+            </div>
+        </section>
         <section id="sec-titulo">
             <!--Seccion para agregar una palicula favorita por codigo-->
             <h2>Elecciones 2021 | GENERALES</h2>
@@ -63,7 +74,7 @@
         </section>
         <section id="sec-contenido">
             <div id="boton-agregar" style="flex-grow: 3;">
-                <button class="agregar-button">+ Agregar a Informe</button>
+                <a class="agregar-button">+ Agregar a Informe</a>
             </div>
             <div id="mesas_escrutadas_div" style="flex-grow: 0;">
             <div>
@@ -243,23 +254,24 @@
         <section id="cuadro_detalle">
             <div class="card1">
                 <h3>Agrupaciones politicas</h3>
-                <hr>
                 <br>
-                <div>
-                    <h4>Agrupacion 1</h4>
-                    <p>
-                        Votos: 38%
-                        <br>
-                        30000 votos
-                    </p>
+                <div class="scroll-div">
+                    <div>
+                        <h4>Agrupacion 1</h4>
+                        <p>
+                            Votos: 38%
+                            <br>
+                            30000 votos
+                        </p>
+                    </div>
+                    <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                        <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
+                        <span class="progress-bar-text">75%</span>
+                        </div>
+                        </div>
+                        
+                                </div>
                 </div>
-                <div class="progress" style="background: var(--grafica-amarillo-claro);">
-                    <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
-                    <span class="progress-bar-text">75%</span>
-                    </div>
-                    </div>
-                    
-            </div>
             <div class="card2">
                 <h3>Buenos Aires</h3>
                 <!--Mapas-->
@@ -273,9 +285,7 @@
                         </path>
                     </svg>
                 </div>
-
             </div>
-            <div class="card3">
                 <div class="card3">
                     <h3>Grafica de barras</h3>
                     <div class="chart-wrap horizontal">
@@ -351,21 +361,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="sec-messages">
-            <div class="success-button">
-                <i class="fa-solid fa-thumbs-up"></i>
-                <p>Se agregó con éxito el resultado al informe</p>
-            </div>
-            <div class="error-button">
-                <i class="fa-solid fa-exclamation-triangle"></i>
-                <p>Error: Se produjo un error al intentar agregar resultados al infome</p>
-            </div>
-            <div class="info-button">
-                <i class="fa-solid fa-exclamation"></i>
-                <p>La operacion no se pudo completar</p>
-            </div>
+            
         </section>
     </main>
     <!--Pie de página-->

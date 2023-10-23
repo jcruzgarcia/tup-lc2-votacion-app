@@ -90,6 +90,7 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -103,6 +104,18 @@ h3 {
   color: white;
   margin-right: 10px;
   margin-top: 4px;
+}
+
+.filtrar-button {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  font: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--textos);
+
 }
 
 .logo {
@@ -123,10 +136,8 @@ footer p{
   line-height: 25px;
 }
 footer img{
-  width: 150px;
   height: 40px;
-  margin: 20px;
-}
+} 
 
 footer .logos{
   display: flex;
