@@ -8,8 +8,13 @@
     <title>Sistema de Publicación de Resultados Electorales</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/informes.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/dcacde4dce.js" crossorigin="anonymous"></script>
+    <script src="/js/common.js" defer></script>
+    <script src="/js/pages/informes.js" defer></script>
 </head>
 
 <body>
@@ -32,11 +37,11 @@
     <main>
         <section id="sec-messages">
             <div class="success-button">
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-up"></i>
                 <p>Se agregó con éxito el resultado al informe</p>
             </div>
             <div class="error-button">
-                <i class="fa-solid fa-exclamation-triangle"></i>
+                <i class="fas fa-solid fa-exclamation-triangle"></i>
                 <p>Error: Se produjo un error al intentar agregar resultados al infome</p>
             </div>
             <div class="info-button">
@@ -73,7 +78,7 @@
                             <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores
                             Nacionales > Buenos Aires</p>                            
                         </td>
-                        <td class="columna">
+                        <td class="columna" id="datos-generales">
                             <!-- Datos Generales -->
                             <div class="mesas_escrutadas">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -235,14 +240,10 @@
                                 Participación sobre Escrutado: 80%
                             </div>
                         </td>
-                        <td class="grilla_datos">
+                        <td class="grid_datos">
                             <!-- Datos por Agrupación -->
-                            <ul class="lista_datos">
-                                <li>Agrupación 1: 40% (500 votos)</li>
-                                <li>Agrupación 2: 30% (300 votos)</li>
-                                <li>Agrupación 3: 20% (200 votos)</li>
-                                <li>Agrupación 4: 10% (100 votos)</li>
-                            </ul>
+                                <p>Agrupación 1: 40% (500 votos)</p>
+                                <p>Agrupación 2: 30% (300 votos)</p>
                         </td>
                     </tr>
                 </tbody>

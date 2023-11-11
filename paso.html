@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/pages/paso.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/dcacde4dce.js" crossorigin="anonymous"></script>
+    <script src="/js/common.js" defer></script>
+    <script src="/js/pages/paso.js" defer></script>
 </head>
 
 <body>
@@ -22,24 +24,24 @@
         <div class="menu-bar">
             <ul>
                 <li>
-                    <select class="selects" name="year" id="">
+                    <select class="selects" name="year" id="selectPeriodo">
                         <option selected disabled value="0" >Año</option>
-                        <option>2021</option>
-                        <option>2023</option>
+
                     </select>
                 </li>
                 <li>
-                    <select class="selects" name="charge" id="">
+                    <select class="selects" name="charge" id="selectCargo">
                         <option selected disabled value="0">Cargo</option>
-                        <option>Presidente</option>
-                        <option>Diputados</option>
                     </select>
                 </li>
                 <li>
-                    <select class="selects" name="district" id="">
+                    <select class="selects" name="district" id="selectDistrito">
                         <option selected disabled value="0">Distrito</option>
-                        <option>Centro</option>
-                        <option>Norte</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="selects" name="section" id="selectSeccion">
+                        <option selected disabled value="0">Sección</option>
                     </select>
                 </li>
                 <li>
